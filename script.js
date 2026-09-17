@@ -28,8 +28,8 @@ function initProductPage() {
   var validMoods = ['fresh', 'relax', 'focus', 'romance'];
 
   var typeLabels = {
-    spray: 'Room Spray',
-    candle: 'เทียนหอม'
+    bag: 'ชาซอง',
+    latte: 'ผงชาลาเต้'
   };
 
   function renderProducts() {
