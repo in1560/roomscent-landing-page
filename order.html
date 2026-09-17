@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สั่งซื้อ — Room Scent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a href="index.html" class="wordmark">ROOM SCENT</a>
+    <nav class="nav">
+      <a href="product.html">สินค้า</a>
+      <a href="order.html" aria-current="page">สั่งซื้อ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="shell shell--narrow">
+
+      <div class="section-head">
+        <h1>ยืนยันคำสั่งซื้อ</h1>
+        <p class="lede">กรอกข้อมูลติดต่อของคุณให้ครบ ทีมงานจะติดต่อกลับเพื่อยืนยันและนัดจัดส่ง</p>
+      </div>
+
+      <form id="orderForm" novalidate>
+
+        <div class="field">
+          <label for="customerName">ชื่อลูกค้า</label>
+          <input type="text" id="customerName" name="customerName" placeholder="ชื่อ-นามสกุล" required>
+        </div>
+
+        <div class="field">
+          <label for="contact">เบอร์โทร / Line</label>
+          <input type="text" id="contact" name="contact" placeholder="เบอร์โทรศัพท์หรือ Line ID" required>
+        </div>
+
+        <div class="field">
+          <label for="items">รายการสินค้า</label>
+          <textarea id="items" name="items" placeholder="เช่น Room Spray Fresh 30ml x 1" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="total">จำนวนเงินรวม</label>
+          <input type="text" id="total" name="total" inputmode="decimal" placeholder="0" required>
+          <p class="field__hint">ยอดนี้เติมให้อัตโนมัติจากหน้าสินค้า ตรวจสอบก่อนกดยืนยันอีกครั้ง</p>
+        </div>
+
+        <div class="field">
+          <label for="note">หมายเหตุ</label>
+          <textarea id="note" name="note" placeholder="ที่อยู่จัดส่ง หรือข้อความเพิ่มเติม (ถ้ามี)"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--solid btn--full">ยืนยันสั่งซื้อ</button>
+
+      </form>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell site-footer__inner">
+    <p>Room Scent — น้ำหอมปรับบรรยากาศห้อง ออกแบบมาให้เข้ากับทุกอารมณ์ของวันคุณ</p>
+    <p class="note">© 2026 Room Scent</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

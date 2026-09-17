@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สินค้าทั้งหมด — Room Scent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a href="index.html" class="wordmark">ROOM SCENT</a>
+    <nav class="nav">
+      <a href="product.html" aria-current="page">สินค้า</a>
+      <a href="order.html">สั่งซื้อ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="shell">
+
+      <div class="section-head">
+        <h1>สินค้าทั้งหมด</h1>
+        <p class="lede">เลือกกลิ่นตามอารมณ์ที่ต้องการในวันนี้ หรือดูทั้งหมดแล้วค่อยตัดสินใจ</p>
+      </div>
+
+      <div class="filters" id="filter-bar">
+        <button type="button" class="filter is-active" data-mood="all" aria-pressed="true">ทั้งหมด</button>
+        <button type="button" class="filter" data-mood="fresh" aria-pressed="false">Fresh</button>
+        <button type="button" class="filter" data-mood="relax" aria-pressed="false">Relax</button>
+        <button type="button" class="filter" data-mood="focus" aria-pressed="false">Focus</button>
+        <button type="button" class="filter" data-mood="romance" aria-pressed="false">Romance</button>
+      </div>
+
+      <div class="grid grid--products" id="product-list">
+        <!-- การ์ดสินค้าจะถูกเติมด้วย JavaScript -->
+      </div>
+
+      <p class="empty hide" id="empty-state">ยังไม่มีสินค้าในกลิ่นนี้</p>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell site-footer__inner">
+    <p>Room Scent — น้ำหอมปรับบรรยากาศห้อง ออกแบบมาให้เข้ากับทุกอารมณ์ของวันคุณ</p>
+    <p class="note">© 2026 Room Scent</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
