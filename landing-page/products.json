@@ -1,0 +1,138 @@
+{
+  "brand": {
+    "name": "Room Scent",
+    "tagline": "เปลี่ยนห้องเล็กๆ ให้เป็นที่ที่คุณอยากกลับมา"
+  },
+  "moods": [
+    {
+      "id": "fresh",
+      "name": "Fresh",
+      "nameTh": "สดชื่น",
+      "color": "#B8D4C4",
+      "description": "กลิ่นส้มซิตรัสกับมินต์อ่อนๆ ที่ทำให้ห้องโล่งขึ้นในไม่กี่วินาที เหมาะกับเช้าที่ต้องรีบไปเรียน หรือวันที่ห้องอับจนอยากเปิดหน้าต่างทั้งวัน"
+    },
+    {
+      "id": "relax",
+      "name": "Relax",
+      "nameTh": "ผ่อนคลาย หลับสบาย",
+      "color": "#C7BEDB",
+      "description": "ลาเวนเดอร์และวานิลลานุ่มๆ ที่ช่วยให้ความคิดในหัวค่อยๆ เงียบลง ฉีดก่อนนอนสักหน่อย แล้วปล่อยให้วันที่เหนื่อยจบลงอย่างที่ควรจะเป็น"
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "nameTh": "มีสมาธิ ช่วยอ่านหนังสือ",
+      "color": "#B6C4D2",
+      "description": "โรสแมรี่กับไม้ซีดาร์ที่ให้ความรู้สึกคมชัดแต่ไม่แรงจนรบกวน เหมาะกับคืนก่อนสอบ หรือช่วงที่ต้องปั่นงานให้จบภายในวันนี้"
+    },
+    {
+      "id": "romance",
+      "name": "Romance",
+      "nameTh": "โรแมนติก สำหรับช่วงเวลาพิเศษ",
+      "color": "#E4BFB4",
+      "description": "กุหลาบอ่อนกับมัสก์อุ่นๆ ที่ทำให้ห้องดูพิเศษขึ้นโดยไม่ต้องจัดอะไรเยอะ เก็บไว้ใช้กับวันที่อยากให้จำได้นานๆ"
+    }
+  ],
+  "products": [
+    {
+      "id": "spray-fresh-30",
+      "name": "Room Spray Fresh 30ml",
+      "mood": "fresh",
+      "type": "spray",
+      "size": "30ml",
+      "price": 89,
+      "image": "images/fresh.jpg",
+      "description": "ไซส์พกพาสำหรับคนที่อยากลองกลิ่นสดชื่นก่อน พกใส่กระเป๋าไปหอหรือไปคอนโดเพื่อนได้สบาย"
+    },
+    {
+      "id": "spray-fresh-100",
+      "name": "Room Spray Fresh 100ml",
+      "mood": "fresh",
+      "type": "spray",
+      "size": "100ml",
+      "price": 199,
+      "image": "images/fresh.jpg",
+      "description": "ขวดใหญ่สำหรับคนที่ติดกลิ่นสดชื่นแล้ว ใช้ได้ทั้งห้องนอน ห้องน้ำ ยันตู้เสื้อผ้า"
+    },
+    {
+      "id": "spray-relax-30",
+      "name": "Room Spray Relax 30ml",
+      "mood": "relax",
+      "type": "spray",
+      "size": "30ml",
+      "price": 89,
+      "image": "images/relax.jpg",
+      "description": "ขวดเล็กที่วางข้างเตียงได้พอดี ฉีดสองสามทีก่อนปิดไฟก็พอแล้ว"
+    },
+    {
+      "id": "spray-relax-100",
+      "name": "Room Spray Relax 100ml",
+      "mood": "relax",
+      "type": "spray",
+      "size": "100ml",
+      "price": 199,
+      "image": "images/relax.jpg",
+      "description": "ไซส์ที่อยู่กับคุณได้เป็นเดือน สำหรับคนที่อยากให้ทุกคืนหลับง่ายเหมือนกันหมด"
+    },
+    {
+      "id": "spray-focus-30",
+      "name": "Room Spray Focus 30ml",
+      "mood": "focus",
+      "type": "spray",
+      "size": "30ml",
+      "price": 89,
+      "image": "images/focus.jpg",
+      "description": "ขนาดกำลังดีสำหรับวางบนโต๊ะอ่านหนังสือ หยิบฉีดตอนสมาธิเริ่มหลุดได้ทันที"
+    },
+    {
+      "id": "spray-focus-100",
+      "name": "Room Spray Focus 100ml",
+      "mood": "focus",
+      "type": "spray",
+      "size": "100ml",
+      "price": 199,
+      "image": "images/focus.jpg",
+      "description": "ขนาดใช้งานจริงสำหรับช่วงสอบยาวๆ ที่ต้องนั่งโต๊ะติดกันหลายสัปดาห์"
+    },
+    {
+      "id": "spray-romance-30",
+      "name": "Room Spray Romance 30ml",
+      "mood": "romance",
+      "type": "spray",
+      "size": "30ml",
+      "price": 89,
+      "image": "images/romance.jpg",
+      "description": "ไซส์ทดลองสำหรับกลิ่นที่ไม่ได้ใช้ทุกวัน แต่พอถึงวันนั้นก็ต้องมี"
+    },
+    {
+      "id": "spray-romance-100",
+      "name": "Room Spray Romance 100ml",
+      "mood": "romance",
+      "type": "spray",
+      "size": "100ml",
+      "price": 199,
+      "image": "images/romance.jpg",
+      "description": "ขวดใหญ่ที่คุ้มกว่า เผื่อว่าช่วงเวลาพิเศษของคุณมีบ่อยกว่าที่คิด"
+    },
+    {
+      "id": "candle-relax",
+      "name": "เทียนหอม Relax",
+      "mood": "relax",
+      "type": "candle",
+      "size": "120g",
+      "price": 149,
+      "image": "images/relax.jpg",
+      "description": "แสงไฟอุ่นๆ กับกลิ่นลาเวนเดอร์ที่ค่อยๆ กระจายไปทั้งห้อง เหมาะกับคืนที่อยากปิดมือถือแล้วอยู่เงียบๆ"
+    },
+    {
+      "id": "candle-romance",
+      "name": "เทียนหอม Romance",
+      "mood": "romance",
+      "type": "candle",
+      "size": "120g",
+      "price": 149,
+      "image": "images/romance.jpg",
+      "description": "เทียนที่เปลี่ยนบรรยากาศห้องได้ตั้งแต่จุดไฟติด ให้กลิ่นกุหลาบอุ่นๆ ทำหน้าที่แทนคำพูด"
+    }
+  ]
+}
