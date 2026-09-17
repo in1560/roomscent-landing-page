@@ -5,7 +5,7 @@
    ============================================================ */
 
 var ROOM_SCENT_CONFIG = {
-  ORDER_ENDPOINT: 'https://script.google.com/macros/s/AKfycbzuSTAOoLCvub10-Q8D51GC9lbHrySi_Syf6Oa7MNZLhPf2auu3-RmkbEyTl9PuJdL9/exec',
+  ORDER_ENDPOINT: 'https://script.google.com/macros/s/AKfycbyp9yt9VAKUiW-txWpfdKv0SwY8P6rNgxZ09FpyFCTvoadooFU1j8y-BXwBCdjHYrw/exec',
   ORDERS_CSV_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSMC1bM6Qa6q0veQGoDOKW5AtoyJqP_fNjllbe-bIkq9rGCD1KZ6kopU9fqd9N4dy4hU9N6-km4gMua/pub?gid=0&single=true&output=csv'
 };
 
