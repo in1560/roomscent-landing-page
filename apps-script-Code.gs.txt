@@ -1,0 +1,49 @@
+/**
+ * ชาใจ — Apps Script backend สำหรับรับคำสั่งซื้อจาก order.html
+ *
+ * ไฟล์นี้เป็นสำเนาสำรอง เก็บไว้ใน git ของ repo เพื่อไม่ให้โค้ดหายไป
+ * ถ้า Apps Script โปรเจกต์บน Google หายหรือถูกลบ ให้คัดลอกโค้ดนี้ไปวางใหม่ได้ทันที
+ *
+ * วิธีติดตั้งใหม่:
+ * 1. เปิด https://script.google.com > New project
+ * 2. วางโค้ดทั้งหมดด้านล่างนี้แทนโค้ดเริ่มต้น
+ * 3. เปลี่ยนค่า SHEET_ID ด้านล่างให้ตรงกับ Google Sheet ที่ใช้เก็บออเดอร์จริง
+ * 4. Deploy > New deployment > Web app
+ *    - Execute as: Me
+ *    - Who has access: Anyone
+ * 5. คัดลอก URL ที่ได้ (ลงท้ายด้วย /exec)
+ * 6. นำ URL ไปแทนที่ค่า ORDER_ENDPOINT ในไฟล์ script.js ของโปรเจกต์เว็บ
+ *
+ * หมายเหตุ: ใช้ SpreadsheetApp.openById() แทน getActiveSpreadsheet()
+ * โดยตั้งใจ เพราะไม่ต้องพึ่งการเปิดสคริปต์ผ่านเมนู Extensions ในตัวชีต
+ * (เมนูนี้มักถูกแอดมิน Google Workspace ขององค์กร/มหาวิทยาลัยปิดไว้)
+ * การระบุ Sheet ID ตรงๆ แบบนี้ทำงานได้แน่นอนไม่ว่าจะเปิดสคริปต์จากที่ไหน
+ */
+
+var SHEET_ID = '1EcyxPNox6z11zNu-Js-uLJyfvSG2kdrvIG90k0bZ9Jo'; // เปลี่ยนตรงนี้ถ้าย้ายไปชีตใหม่
+
+function doPost(e) {
+  var sheet = SpreadsheetApp.openById(SHEET_ID).getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+
+  sheet.appendRow([
+    new Date(),
+    data.customerName,
+    data.contact,
+    data.items,
+    data.total,
+    data.note
+  ]);
+
+  return ContentService
+    .createTextOutput("Success")
+    .setMimeType(ContentService.MimeType.TEXT);
+}
+
+/**
+ * บันทึกทุกครั้งที่ deploy ใหม่ (จะได้ไม่ต้องมานั่งหาย้อนหลัง):
+ *
+ * วันที่ deploy: __________________
+ * URL ที่ได้:     __________________
+ * ผูกกับ Sheet ID: 1EcyxPNox6z11zNu-Js-uLJyfvSG2kdrvIG90k0bZ9Jo
+ */
